@@ -3,9 +3,16 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.logo {
-    width: 61.09px;
-    margin-top: 30px;
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
 }
 
 :root {
@@ -14,11 +21,127 @@
     --filter-bg-color: #DEEBFF;
 }
 
+/****** Header ***********/
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    width: 65px;
+    margin-top: 20px;
+}
+
+.onglets-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 50px;
+}
+
+.selected-nav:hover {
+    color: #0065FC;
+}
+
+.selected-nav {
+    border-color: #0065FC;
+    border-top-width: 3px;
+    border-top-style: solid;
+    padding-top: 10px;
+}
+
+.unselected-nav {
+    margin-top: 12px;
+}
+
 .fa-solid {
     color: var(--main-color);
 }
 
+.Promesse-filtres {
+    margin: 0;
+    padding: 0;
+}
+
+.input-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    border-style: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    border-color: #D9D9D9;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+#icon-pinpoint {
+    width: 40px;
+    height: 20px;
+    object-fit: contain;
+    border-top-left-radius: 10;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+}
+
+.input-search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    padding: 1px;
+    font-size: 10px;
+    color: #F2F2F2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0065FC;
+}
+
+.input-search-button-text {
+    font-size: 10px;
+}
+
+.filters-title {
+    margin-right: 10px;
+}
+
+.filters-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters-button {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #D9D9D9;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.number-flat-infos {
+    margin-bottom: 30px;
+}
+
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
 }
