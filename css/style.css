@@ -56,7 +56,7 @@ p {
 }
 
 .unselected-nav {
-    margin-top: 12px;
+    padding-top: 13px;
 }
 
 .fa-solid {
@@ -146,7 +146,7 @@ p {
 }
 
 .hebergements-and-populaires {
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 body {
@@ -176,11 +176,10 @@ body {
 }
 
 .card:hover {
-    transform:scale(1.1);
+    transform: scale(1.1);
     z-index: 2;
 
 }
-
 
 .card img {
     object-fit: cover;
@@ -259,6 +258,80 @@ body {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+}
+
+/******* Activités *******/
+
+.activités-marseille {
+    margin-top: 100px;
+}
+
+.card-txt {
+    margin-left: 13px;
+}
+
+.activités-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    column-gap: 30px;
+}
+
+.activités-card {
+    width: 300px;
+    height: 430px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 1s;
+
+}
+
+.activités-card-picture {
+    width: 30px;
+    height: 380px;
+    padding-right: 3px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.activités-card img {
+    object-fit: cover;
+    width: 300px;
+    height: 380px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.activités-card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+/******* Footer ******/
+
+.footer {
+    background-color: #F2F2F2;
+    margin-top: 100px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.a-propos-link {
+    padding-left: 30px;
+    padding-right: 250px;
+}
+
+.nos-hebergements-and-assistance-link {
+    display: flex;
+    column-gap: 250px;
+    ;
 }
 
 
