@@ -2,6 +2,8 @@
 
 * {
     font-family: 'Raleway', sans-serif;
+    color: black;
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -46,22 +48,41 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    column-gap: 50px;
 }
 
-.selected-nav:hover {
-    color: #0065FC;
+.onglets-nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
 }
 
-.selected-nav {
+.onglets-nav ul li.active a:hover {
     border-color: #0065FC;
     border-top-width: 3px;
     border-top-style: solid;
     padding-top: 10px;
+    color: #0065FC;
 }
 
-.unselected-nav {
-    padding-top: 13px;
+.onglets-nav ul li.inactive a:hover {
+    color: #0065FC;
+}
+
+.onglets-nav ul li.active a {
+    border-color: #0065FC;
+    border-top-width: 3px;
+    border-top-style: solid;
+    padding-top: 10px;
+    color: #0065FC;
+    text-decoration: none;
+}
+
+.onglets-nav ul li.inactive a {
+    padding-top: 10px;
+    text-decoration: none;
+
 }
 
 .fa-solid {
@@ -313,7 +334,7 @@ body {
 }
 
 .card-txt {
-   line-height: 5px;
+    line-height: 5px;
 }
 
 .populaires-title {
