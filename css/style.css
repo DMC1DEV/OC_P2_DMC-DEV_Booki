@@ -36,7 +36,8 @@ p {
     align-items: start;
     position: sticky;
     top: 0px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    max-width: 1440px;
 }
 
 .logo {
@@ -48,40 +49,32 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 250px;
 }
 
 .onglets-nav ul {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     text-decoration: none;
-    display: flex;
-    align-items: center;
-    column-gap: 80px;
+    padding: 0;
+    width: 250px;
 }
 
-.onglets-nav ul li.active a:hover {
+.onglet a {
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s;
+}
+
+.onglet a:hover {
     border-color: #0065FC;
     border-top-width: 3px;
     border-top-style: solid;
-    padding-top: 10px;
-    color: #0065FC;
-}
-
-.onglets-nav ul li.inactive a:hover {
-    color: #0065FC;
-}
-
-.onglets-nav ul li.active a {
-    border-color: #0065FC;
-    border-top-width: 3px;
-    border-top-style: solid;
-    padding-top: 10px;
+    padding-top: 13px;
     color: #0065FC;
     text-decoration: none;
-}
-
-.onglets-nav ul li.inactive a {
-    padding-top: 10px;
-    text-decoration: none;
+    font-weight: 800;
 }
 
 .fa-solid {
@@ -183,23 +176,25 @@ input[type=button]:active {
 .number-flat-infos {
     display: flex;
     justify-content: flex-start;
-    align-items: center
+    align-items: center;
+    margin-top: 30px;
 }
 
 .hebergements-and-populaires {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
+    min-width: 320px;
     padding: 0 50px;
+    margin: auto;
     box-sizing: border-box;
 }
 
@@ -241,7 +236,7 @@ body {
 
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .hebergements-and-populaires section {
@@ -260,7 +255,6 @@ body {
 
 .hebergements-title {
     margin-bottom: 33px;
-    padding-left: 10px;
 }
 
 .hebergements-cards {
@@ -268,13 +262,12 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 20px;
-
 }
 
 .hebergements-cards .big-card {
     display: flex;
     flex-direction: column;
-    height: 210px;
+    max-width: 250px;
     width: 30%;
     background-color: white;
     border-bottom-left-radius: 20px;
@@ -283,16 +276,20 @@ body {
     border-top-right-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     transition: 1s;
+    padding: 5px;
+}
+
+.big-card-img {
+    max-height: 130px;
+    max-width: 300px;
 }
 
 .big-card img {
-    object-fit: cover;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 130px;
+    height: 120px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .big-card:hover {
@@ -320,20 +317,12 @@ body {
     margin-left: 10px;
 }
 
-.Promesse-filtres {
-    line-height: 10px;
-}
-
 /****** Populaires ***********/
 
 .populaires {
     display: flex;
     flex-direction: column;
     width: 32%;
-}
-
-.card-txt {
-    line-height: 5px;
 }
 
 .populaires-title {
@@ -366,7 +355,7 @@ body {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-    line-height: 20px;
+
 }
 
 .populaires-cards .card-subtitle {
@@ -435,16 +424,14 @@ body {
 
 .links {
     display: flex;
+    justify-content: space-evenly;
+    align-items: flex;
 }
 
-.a-propos-link {
-    padding-left: 30px;
-    padding-right: 250px;
-}
-
-.nos-hebergements-and-assistance-link {
-    display: flex;
-    column-gap: 250px;
+.a-propos-link,
+.nos-hebergements-link,
+.assistance-link {
+    width: 30%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -483,10 +470,18 @@ body {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .card-title {
+        line-height: 15px;
+    }
+
+    .big-card {
+        padding: 8px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768ƒpx) {
+    .main-container {}
 }
