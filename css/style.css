@@ -362,7 +362,6 @@ body {
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-
 }
 
 .populaires-cards .card-subtitle {
@@ -518,7 +517,7 @@ body {
 @media (max-width: 768px) {
 
     .main-container {
-        padding: 10 10px;
+        padding: 0 20px;
     }
 
     .header-nav {
@@ -556,6 +555,11 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+    }
+
+    .filters-button {
+        width: fit-content;
+        width: fit-content;
     }
 
     .Promesse-filtres {
@@ -626,13 +630,24 @@ body {
     }
 
     .activités-cards {
-        flex-direction: column
+        flex-direction: column;
+        width: 100%;
+        row-gap: 50px;
     }
 
     .activités-card {
         flex-direction: column;
-        width: auto;
-        height: 130px;
+        width: 100%;
+        max-height: 250px;
+        height: 100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: 1s;
+    }
+
+    .card-content {
+
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .hebergements-cards {
@@ -646,11 +661,16 @@ body {
     }
 
     .footer {
-        margin-top: 100px;
+        margin-top: 900px;
     }
 
     .links {
         flex-direction: column;
+    }
+
+    .a-propos-link, .nos-hebergements-link, .assistance-link {
+        width: 100%;
+        line-height: 25px;
     }
 
 }
