@@ -4,6 +4,7 @@
     font-family: 'Raleway', sans-serif;
     color: black;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 :root {
