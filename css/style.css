@@ -318,6 +318,8 @@ body {
 }
 
 .hebergements-plus {
+    margin-left: 0;
+    margin-right: 50px;
     padding-top: 20px;
     font-size: 16px;
     margin: 0;
@@ -386,12 +388,14 @@ body {
 
 .activités-cards {
     display: flex;
-    width: 100%;
+    width: 96%;
     gap: 30px;
     justify-content: space-between;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .activités-card {
@@ -454,13 +458,12 @@ body {
 .links {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex;
 }
 
 .a-propos-link,
 .nos-hebergements-link,
 .assistance-link {
-    width: 30%;
+    width: 70%;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -514,7 +517,7 @@ body {
     }
 
     .activités-card {
-        max-height: 260px;
+        max-height: 250px;
     }
 
     .activités-card-picture {
@@ -531,7 +534,9 @@ body {
 @media (max-width: 768px) {
 
     .main-container {
-        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
     }
 
     .header-nav {
@@ -581,11 +586,18 @@ body {
     .filters-buttons-all {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .filters-button {
-        width: fit-content;
-        width: fit-content;
+        width: 45%;
+        max-width: 60%;
+        min-width: 40%;
+    }
+
+    .filters-title {
+        margin-right: 100%;
     }
 
     .Promesse-filtres {
@@ -612,6 +624,7 @@ body {
     .hebergements-and-populaires .populaires {
         background-color:#F2F2F2;
         width: 100%;
+        border-radius: 0%;
     }
 
     .populaires-title {
@@ -625,6 +638,7 @@ body {
     }
 
     .hebergements {
+        order: 2;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -654,7 +668,7 @@ body {
 
     .activités-cards {
         flex-direction: column;
-        width: 100%;
+        width: 85%;
         row-gap: 50px;
     }
 
@@ -697,11 +711,20 @@ body {
     }
 
     .activités-marseille {
-        margin-left: 0px;
+        margin-left: 30px;
     }
 
     .hebergements-title .section-title {
         text-align: start;
+    }
+
+    .populaires {
+        order: 1;
+        padding: 0;
+    }
+
+    .hebergements-plus {
+        float: left;
     }
 
 }
