@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,10 +21,12 @@
                 <div class="logo-booki">
                     <img class="logo" src="./src/logo/Booki.png" alt="Logo du site Booki">
                 </div>
-                <ul class="onglets-nav">
-                    <li class="onglet"><a href="#link-to-hebergements">Hébergements</a></li>
-                    <li class="onglet"><a href="#link-to-activités">Activités</a></li>
-                </ul>
+                <nav class="onglets-nav">
+                    <ul class="onglets-nav">
+                        <li class="onglet"><a href="#link-to-hebergements">Hébergements</a></li>
+                        <li class="onglet"><a href="#link-to-activités">Activités</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main>
@@ -46,38 +48,36 @@
                         <input type="button" id="search" value="Rechercher">
                     </div>
                     <div class="input-search-button-icon-only">
-                        <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass" id="search-icon-only"></i></a>
                     </div>
                 </div>
-                
             </div>
             <div class="filters-buttons">
                 <div class="filters-title">
-                    <h3>Filtres</h3>
+                    <h2>Filtres</h2>
                 </div>
                 <div class="filters-buttons-all">
                     <div class="filters-button">
-                        <i class="fa-solid fa-money-bill-wave" style="color: #0065fc;"></i>
-                        <h3>Economique</h3>
+                        <i class="fa-solid fa-money-bill-wave"></i>
+                        <h2>Economique</h2>
                     </div>
                     <div class="filters-button">
-                        <i class="fa-solid fa-person" style="color: #0065fc;"></i>
-                        <h3>Familial</h3>
+                        <i class="fa-solid fa-person"></i>
+                        <h2>Familial</h2>
                     </div>
                     <div class="filters-button">
-                        <i class="fa-solid fa-heart" style="color: #0065fc;"></i>
-                        <h3>Romantique</h3>
+                        <i class="fa-solid fa-heart"></i>
+                        <h2>Romantique</h2>
                     </div>
                     <div class="filters-button">
-                        <i class="fa-solid fa-fire" style="color: #0065fc;"></i>
-                        <h3>Nos pépites</h3>
+                        <i class="fa-solid fa-fire"></i>
+                        <h2>Nos pépites</h2>
                     </div>
                 </div>
             </div>
             <div class="number-flat-infos">
                 <div class="logo-infos">
-                    <i class="fa-solid fa-info" style="color: #0065fc; font-size: 15px; border-style: solid; border-radius: 100%; width: 17px; 
-                        border-color: rgb(197, 197, 197); border-width: 1px; padding-left: 5px;"></i>
+                    <i class="fa-solid fa-info" id="logo-infos-log"></i>
                 </div>
                 <div class="text-infos">
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -298,7 +298,7 @@
             <div class="Activités" id="link-to-activités">
                 <section>
                     <div class="activités-marseille">
-                        <h1>Activités à Marseille</h1>
+                        <h2>Activités à Marseille</h2>
                     </div>
                     <div class="activités-cards">
                         <article class="activités-card">
@@ -361,21 +361,41 @@
             <div class="footer">
                 <div class="links">
                     <div class="a-propos-link">
-                        <a href="#"><h3>À propos</h3></a>
-                        <a href="#"><p>Fonctionnement du site</p></a>
-                        <a href="#"><p>Conditions générales</p></a>
-                        <a href="#"><p>Données et confidentialité</p></a>
+                        <a href="#">
+                            <h3>À propos</h3>
+                        </a>
+                        <a href="#">
+                            <p>Fonctionnement du site</p>
+                        </a>
+                        <a href="#">
+                            <p>Conditions générales</p>
+                        </a>
+                        <a href="#">
+                            <p>Données et confidentialité</p>
+                        </a>
                     </div>
                     <div class="nos-hebergements-link">
-                            <a href="#"><h3>Nos hébergements</h3></a>
-                            <a href="#"><p>Charte qualité</p></a>
-                            <a href="#"><p>Proposer votre hôtel</p></a>
+                        <a href="#">
+                            <h3>Nos hébergements</h3>
+                        </a>
+                        <a href="#">
+                            <p>Charte qualité</p>
+                        </a>
+                        <a href="#">
+                            <p>Proposer votre hôtel</p>
+                        </a>
 
                     </div>
                     <div class="assistance-link">
-                            <a href="#"><h3>Assistance</h3></a>
-                            <a href="#"><p>Centre d'aide</p></a>
-                            <a href="#"><p>Nous contacter</p></a>
+                        <a href="#">
+                            <h3>Assistance</h3>
+                        </a>
+                        <a href="#">
+                            <p>Centre d'aide</p>
+                        </a>
+                        <a href="#">
+                            <p>Nous contacter</p>
+                        </a>
                     </div>
                 </div>
             </div>
