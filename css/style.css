@@ -19,7 +19,7 @@ h3 {
 
 h2 {
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
 }
 /****** Header ******/
 
@@ -592,7 +592,7 @@ body {
 
 @media (max-width: 768px) {
 
-    .fa-solid {
+    .input-search-button-icon-only .fa-solid {
         color: white;
     }
 
@@ -670,15 +670,14 @@ body {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
     .filters-button {
         display: flex;
         justify-content: flex-start;
         width: 45%;
-        max-width: 200px;
-        min-width: 150px;
+        min-width: 158px;
         max-height: none;
     }
 
@@ -811,6 +810,8 @@ body {
         margin-top: 100px;
         margin-bottom: 30px;
         margin-left: 0;
+        width: 100%;
+        margin-left: 60px;
     }
 
     .hebergements-title .section-title {
@@ -822,8 +823,8 @@ body {
         padding: 0;
     }
 
-    .hebergements-plus {
-        float: left;
+    .hebergements-plus  {
+        width: 100%;
     }
 
     .big-card a {
