@@ -21,6 +21,7 @@ h2 {
     margin: 0;
     font-size: 16px;
 }
+
 /****** Header ******/
 
 .header-nav {
@@ -201,13 +202,13 @@ input[type=button]:active {
 }
 
 .logo-infos i {
-    color: #0065fc; 
-    font-size: 15px; 
-    border-style: solid; 
-    border-radius: 100%; 
-    width: 17px; 
-    border-color: rgb(197, 197, 197); 
-    border-width: 1px; 
+    color: #0065fc;
+    font-size: 15px;
+    border-style: solid;
+    border-radius: 100%;
+    width: 17px;
+    border-color: rgb(197, 197, 197);
+    border-width: 1px;
     padding-left: 5px;
 }
 
@@ -814,6 +815,10 @@ body {
         margin-left: 60px;
     }
 
+    .activités-marseille h2 {
+        font-size: 22px;
+    }
+
     .hebergements-title .section-title {
         text-align: start;
     }
@@ -823,7 +828,7 @@ body {
         padding: 0;
     }
 
-    .hebergements-plus  {
+    .hebergements-plus {
         width: 100%;
     }
 
