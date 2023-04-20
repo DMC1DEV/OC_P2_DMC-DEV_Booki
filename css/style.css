@@ -410,7 +410,7 @@ body {
 }
 
 .populaires-cards .card-subtitle {
-    margin: 5;
+    margin: 5px;
 }
 
 .populaires-cards .card-rating {
@@ -600,7 +600,7 @@ body {
     .activités-card:hover,
     .big-card:hover {
         transform: none;
-        z-index: none;
+        z-index: 0;
     }
 
     .main-container {
@@ -613,7 +613,7 @@ body {
         flex-direction: column;
         margin-top: 30px;
         width: auto;
-        padding: none;
+        padding: 0;
     }
 
     .onglets-nav {
@@ -642,7 +642,7 @@ body {
 
     .onglet a:hover {
         border-color: #0065FC;
-        border-top-width: none;
+        border-top-width: 0;
         border-top-style: none;
         border-bottom-style: solid;
         border-bottom-width: 3px;
@@ -890,8 +890,8 @@ body {
         border-color: #F2F2F2;
         border-style: solid;
         border-right: none;
-        padding: none;
-        margin: none;
+        padding: 0;
+        margin: 0;
     }
 
 }
